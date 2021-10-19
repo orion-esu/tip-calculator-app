@@ -54,6 +54,10 @@ input[type='number'] {
   color: #26c0ab;
   font-weight: 700;
   font-size: 4rem; }
+  @media screen and (max-width: 23.5em) {
+    .tip-figure,
+    .total-figure {
+      font-size: 3.5rem; } }
 
 .btn-reset {
   font-size: 1.8rem;
@@ -122,6 +126,13 @@ body {
   border-radius: 15px;
   padding: 2rem;
   margin: auto; }
+  @media only screen and (max-width: 23.5em) {
+    .container {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+      padding: 3rem 2rem 3rem 2rem; } }
 
 .label {
   display: block; }
@@ -148,28 +159,31 @@ input[type='number'] {
   background-color: #00494d;
   border-radius: 5px;
   border: 0;
-  cursor: pointer;
-  outline: 1px solid #00494d; }
+  cursor: pointer; }
   .bill-calc__value:focus, .bill-calc__value:active {
     background-color: #26c0ab;
     outline: 1px solid #26c0ab; }
 
-.bill-input {
-  background-image: url(../images/icon-dollar.svg);
-  background-repeat: no-repeat;
-  background-position: 20px; }
+.wrap {
+  display: flex;
+  align-content: center;
+  justify-content: space-between; }
 
-.people-input {
-  background-image: url(../images/icon-person.svg);
-  background-repeat: no-repeat;
-  background-position: 20px; }
+.hidden {
+  display: none; }
+
+.bill-calc__input {
+  background: url(../images/icon-dollar.svg) no-repeat 20px; }
+
+.bill-calc__people--input {
+  background: url(../images/icon-person.svg) no-repeat 20px; }
 
 .tip-calc {
   padding: 2rem 2rem 5rem 2rem;
   background-color: #00494d;
   border-radius: 15px; }
 
-input[type='reset'] {
+.btn-reset {
   background-color: #26c0ab;
   border: 0;
   border-radius: 5px;
@@ -177,7 +191,7 @@ input[type='reset'] {
   padding: 1.2rem 0.5rem;
   cursor: pointer;
   align-self: end; }
-  input[type='reset']:focus, input[type='reset']:active {
+  .btn-reset:focus, .btn-reset:active {
     outline: 2px solid #26c0ab; }
 
 .tip-figure,
@@ -198,3 +212,6 @@ input[type='reset'] {
 
 .clr-white {
   color: white; }
+
+.clr-red {
+  color: red; }
