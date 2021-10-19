@@ -19,12 +19,13 @@
     <div class="contain">
       <img src="images/logo.svg" alt="Logo Image" class="logo" />
 
-      <div class="container u-mt-sm">
+      <div class="container u-mt-md">
         <section class="bill-calc">
           <form action="">
             <label for="" class="label u-mb-s">Bill</label>
             <!-- <form action=""> -->
-            <input type="number" class="bill-input" placeholder="142.55"/>
+            <!-- <input type="number" class="bill-calc__input" placeholder="142.55"/> -->
+            <input type="number" class="bill-calc__input" placeholder="0.00"/>
             <!-- </form> -->
           </form>
 
@@ -39,19 +40,29 @@
               type="number"
               name=""
               id=""
-              class="bill-calc__input"
+              class="bill-calc__input--custom"
               placeholder="Custom"
             />
           </div>
 
           <form action="">
-            <label for="" class="label u-mb-s">Number of People</label>
+            <div class="wrap">
+              <label for="" class="label u-mb-s">Number of People</label>
+              <label class="label clr-red hidden">Can't be zero</label>
+            </div>
+            <!-- <input
+              type="number"
+              name=""
+              id=""
+              class="bill-calc__people--input"
+              placeholder="5"
+            /> -->
             <input
               type="number"
               name=""
               id=""
-              class="people-input"
-              placeholder="5"
+              class="bill-calc__people--input"
+              placeholder="0"
             />
           </form>
         </section>
@@ -62,15 +73,17 @@
             <span class="label-span">/ person</span>
           </p>
 
-          <p class="tip-figure">$4.27</p>
+          <!-- <p class="tip-figure">$4.27</p> -->
+          <p class="tip-figure">$0.00</p>
 
           <p class="label clr-white">
             Total
             <span class="label-span">/ person</span>
           </p>
 
-          <p class="total-figure">$32.79</p>
-          <input type="reset" value="Reset" class="btn-reset" />
+          <!-- <p class="total-figure">$32.79</p> -->
+          <p class="total-figure">$0.00</p>
+          <button class="btn-reset">Reset</button>
         </section>
       </div>
       <!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
@@ -80,7 +93,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="https://github.com/orion-esu/">Orion Esu ✌🏿</a>.
+        >. Coded by <a href="https://github.com/orion-esu/">Orion Esu✌🏿</a>.
       </div>
     </div>
 
