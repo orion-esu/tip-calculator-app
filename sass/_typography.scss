@@ -1,0 +1,53 @@
+input[type='number'] {
+  font-family: $font-primary;
+  font-weight: $font-weight-lg;
+  font-size: $fs-input;
+
+  &::placeholder {
+    font-family: $font-primary;
+    font-weight: $font-weight-lg;
+    color: $very-dark-cyan;
+    font-size: $fs-input;
+  }
+}
+
+.label {
+  font-size: 1.6rem;
+  font-weight: $font-weight-lg;
+  color: $dark-grayish-cyan-1;
+}
+
+.bill-calc {
+  &__value {
+    font-weight: $font-weight-lg;
+    font-family: $font-primary;
+    font-size: $fs-input;
+    color: $white;
+  }
+
+  &__tips {
+    input[type='number'] {
+      font-size: 1.8rem;
+      &::placeholder {
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+.tip-figure,
+.total-figure {
+  color: $strong-cyan;
+  font-weight: $font-weight-lg;
+  font-size: 4rem;
+}
+
+.btn-reset {
+  font-size: 1.8rem;
+  font-weight: $font-weight-lg;
+  color: $very-dark-cyan;
+  text-transform: uppercase;
+  font-family: $font-primary;
+}
+
+.attribution { font-size: 11px; text-align: center; a{color: hsl(228, 45%, 44%);}}
