@@ -1,0 +1,91 @@
+.logo {
+  margin: auto;
+}
+.container {
+  background-color: $white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: auto;
+}
+
+.label {
+  display: block;
+
+  &-span {
+    display: block;
+    font-size: 1.4rem;
+    color: $dark-grayish-cyan-1;
+    transform: translateY(-5px);
+  }
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  border-radius: 5px;
+  border: none;
+  background-color: $light-grayish-cyan-2;
+  padding: 1rem 1rem;
+  text-align: right;
+  color: $very-dark-cyan;
+  width: 100%;
+
+  &:active,
+  &:focus {
+    outline: 2px solid $strong-cyan;
+  }
+}
+.bill-calc {
+  &__value {
+    padding: 1rem 0.5rem;
+    background-color: $very-dark-cyan;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    outline: 1px solid $very-dark-cyan;
+
+    &:focus,
+    &:active {
+      background-color: $strong-cyan;
+      outline: 1px solid $strong-cyan;
+    }
+  }
+}
+
+.bill-input {
+  background-image: url(../images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+.people-input {
+  background-image: url(../images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+}
+
+.tip-calc {
+  padding: 2rem 2rem 5rem 2rem;
+  background-color: $very-dark-cyan;
+  border-radius: 15px;
+}
+
+input[type='reset'] {
+  background-color: $strong-cyan;
+  border: 0;
+  border-radius: 5px;
+  grid-column: 1/-1;
+  padding: 1.2rem 0.5rem;
+  cursor: pointer;
+  align-self: end;
+
+  &:focus,
+  &:active{
+    outline: 2px solid $strong-cyan;
+  }
+}
+
+.tip-figure,
+.total-figure {
+  justify-self: right;
+}
