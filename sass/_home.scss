@@ -8,6 +8,14 @@
   border-radius: 15px;
   padding: 2rem;
   margin: auto;
+
+  @media only screen and (max-width: $bp-sm) {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 3rem 2rem 3rem 2rem;
+  }
 }
 
 .label {
@@ -43,7 +51,6 @@ input[type='number'] {
     border-radius: 5px;
     border: 0;
     cursor: pointer;
-    outline: 1px solid $very-dark-cyan;
 
     &:focus,
     &:active {
@@ -53,15 +60,21 @@ input[type='number'] {
   }
 }
 
-.bill-input {
-  background-image: url(../images/icon-dollar.svg);
-  background-repeat: no-repeat;
-  background-position: 20px;
+.wrap{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
 }
-.people-input {
-  background-image: url(../images/icon-person.svg);
-  background-repeat: no-repeat;
-  background-position: 20px;
+
+.hidden{
+  display: none;
+}
+
+.bill-calc__input {
+  background: url(../images/icon-dollar.svg) no-repeat 20px;
+}
+.bill-calc__people--input {
+  background: url(../images/icon-person.svg) no-repeat 20px;
 }
 
 .tip-calc {
@@ -70,7 +83,7 @@ input[type='number'] {
   border-radius: 15px;
 }
 
-input[type='reset'] {
+.btn-reset {
   background-color: $strong-cyan;
   border: 0;
   border-radius: 5px;
@@ -80,7 +93,7 @@ input[type='reset'] {
   align-self: end;
 
   &:focus,
-  &:active{
+  &:active {
     outline: 2px solid $strong-cyan;
   }
 }
