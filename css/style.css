@@ -3,4 +3,198 @@
 *::after {
   padding: 0;
   margin: 0;
-  border-radius: border-box; }
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 500px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  background-color: #c5e4e7;
+  height: 100vh;
+  font-family: "Space Mono", monospace;
+  line-height: 1.7;
+  font-weight: 400;
+  padding-top: 3rem; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+input[type='number'] {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 2rem; }
+  input[type='number']::placeholder {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    color: #00494d;
+    font-size: 2rem; }
+
+.label {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #5e7a7d; }
+
+.bill-calc__value {
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  font-size: 2rem;
+  color: white; }
+
+.bill-calc__tips input[type='number'] {
+  font-size: 1.8rem; }
+  .bill-calc__tips input[type='number']::placeholder {
+    font-size: 1.8rem; }
+
+.tip-figure,
+.total-figure {
+  color: #26c0ab;
+  font-weight: 700;
+  font-size: 4rem; }
+
+.btn-reset {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00494d;
+  text-transform: uppercase;
+  font-family: "Space Mono", monospace; }
+
+.attribution {
+  font-size: 11px;
+  text-align: center; }
+  .attribution a {
+    color: #3e52a3; }
+
+body {
+  display: grid;
+  grid-template-columns: [full-start] minmax(1.5rem, 1fr) [center-start] repeat(9, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(1.5rem, 1fr) [full-end]; }
+
+.contain {
+  grid-column: 3/10;
+  justify-content: center; }
+  @media only screen and (max-width: 818px) {
+    .contain {
+      grid-column: 4/9; } }
+  @media only screen and (max-width: 23.5em) {
+    .contain {
+      grid-column: 1/-1; } }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30.5em, 1fr));
+  gap: 4rem; }
+  @media only screen and (max-width: 23.5em) {
+    .container {
+      grid-template-columns: 1fr; } }
+
+.bill-calc {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 3rem; }
+  .bill-calc__tips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.7rem;
+    row-gap: 1rem; }
+    @media only screen and (max-width: 23.5em) {
+      .bill-calc__tips {
+        grid-template-columns: repeat(2, 1fr); } }
+    .bill-calc__tips > :first-child {
+      grid-column: 1/-1; }
+
+.tip-calc {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.5rem;
+  align-items: center; }
+
+.logo {
+  margin: auto; }
+
+.container {
+  background-color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-radius: 15px;
+  padding: 2rem;
+  margin: auto; }
+
+.label {
+  display: block; }
+  .label-span {
+    display: block;
+    font-size: 1.4rem;
+    color: #5e7a7d;
+    transform: translateY(-5px); }
+
+input[type='number'] {
+  -moz-appearance: textfield;
+  border-radius: 5px;
+  border: none;
+  background-color: #f4fafa;
+  padding: 1rem 1rem;
+  text-align: right;
+  color: #00494d;
+  width: 100%; }
+  input[type='number']:active, input[type='number']:focus {
+    outline: 2px solid #26c0ab; }
+
+.bill-calc__value {
+  padding: 1rem 0.5rem;
+  background-color: #00494d;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  outline: 1px solid #00494d; }
+  .bill-calc__value:focus, .bill-calc__value:active {
+    background-color: #26c0ab;
+    outline: 1px solid #26c0ab; }
+
+.bill-input {
+  background-image: url(../images/icon-dollar.svg);
+  background-repeat: no-repeat;
+  background-position: 20px; }
+
+.people-input {
+  background-image: url(../images/icon-person.svg);
+  background-repeat: no-repeat;
+  background-position: 20px; }
+
+.tip-calc {
+  padding: 2rem 2rem 5rem 2rem;
+  background-color: #00494d;
+  border-radius: 15px; }
+
+input[type='reset'] {
+  background-color: #26c0ab;
+  border: 0;
+  border-radius: 5px;
+  grid-column: 1/-1;
+  padding: 1.2rem 0.5rem;
+  cursor: pointer;
+  align-self: end; }
+  input[type='reset']:focus, input[type='reset']:active {
+    outline: 2px solid #26c0ab; }
+
+.tip-figure,
+.total-figure {
+  justify-self: right; }
+
+.u-mb-sm {
+  margin-bottom: 2rem; }
+
+.u-mb-s {
+  margin-bottom: 1rem; }
+
+.u-mt-sm {
+  margin-top: 2rem; }
+
+.u-mt-md {
+  margin-top: 4rem; }
+
+.clr-white {
+  color: white; }
