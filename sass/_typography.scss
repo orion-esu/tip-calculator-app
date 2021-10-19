@@ -40,6 +40,10 @@ input[type='number'] {
   color: $strong-cyan;
   font-weight: $font-weight-lg;
   font-size: 4rem;
+
+  @media screen and (max-width: $bp-sm){
+    font-size: 3.5rem;
+  }
 }
 
 .btn-reset {
