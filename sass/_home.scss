@@ -46,7 +46,7 @@ input[type='number'] {
 }
 .bill-calc {
   &__value {
-    padding: 1rem 0.5rem;
+    padding: 1.2rem 0.5rem;
     background-color: $very-dark-cyan;
     border-radius: 5px;
     border: 0;
@@ -62,13 +62,13 @@ input[type='number'] {
   }
 }
 
-.wrap{
+.wrap {
   display: flex;
   align-content: center;
   justify-content: space-between;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
