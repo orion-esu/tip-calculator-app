@@ -155,7 +155,7 @@ input[type='number'] {
     outline: 2px solid #26c0ab; }
 
 .bill-calc__value {
-  padding: 1rem 0.5rem;
+  padding: 1.2rem 0.5rem;
   background-color: #00494d;
   border-radius: 5px;
   border: 0;
