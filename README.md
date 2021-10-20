@@ -33,7 +33,7 @@ Users should be able to:
 - Live Site URL: [Add live site URL here](https://tip-calcapp.netlify.app/)
 
 ## My process
-Semantic HTML ➡ CSS ➡ JavaScript 🔚
+Semantic HTML ➡ CSS ➡ JavaScript ➡ DOM Manipulation🔚
 
 ### Built with
 
