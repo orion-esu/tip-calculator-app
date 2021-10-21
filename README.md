@@ -29,11 +29,11 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/orion-esu/tip-calculator-app)
-- Live Site URL: [Add live site URL here](https://tip-calcapp.netlify.app/)
+- Solution URL: [https://github.com/orion-esu/tip-calculator-app]
+- Live Site URL: [https://tip-calcapp.netlify.app]
 
 ## My process
-Semantic HTML ➡ CSS ➡ JavaScript ➡ DOM Manipulation🔚
+Semantic HTML ➡ CSS ➡ JavaScript ➡ DOM Manipulation 🔚
 
 ### Built with
 
@@ -48,7 +48,7 @@ Semantic HTML ➡ CSS ➡ JavaScript ➡ DOM Manipulation🔚
 
 This Project seemed like an easy one when i came across it but when i started it, it didn't seem so, but i'm glad i got it working, tho i know some part of my code look a bit messy. I just learned the fundamentals of JavaScript and i decided to build using what i had learnt. Getting to understand how event listeners work including the different types of event listeneres was key for me in this project.
 
-This line of code was one of the pretty stuff i did, took me a while to figure it out tho 😃
+This line of code was one of the pretty stuff i did, took me a while to figure it out tho ✌🏼
 
 ```js
 document.querySelector('.bill-calc__input--custom').addEventListener('keyup', func);
